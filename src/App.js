@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header';
+import MainList from './components/mainList/mainList';
+import ItemCart from './components/itemCart';
+import img from './img/food-bg.jpg'
+import {Switch,Route} from 'react-router-dom';
+import Modal from './components/modal';
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{background: `url(${img}) center center/cover no-repeat`}} 
+    className="app">
+      <Header/>
+      <Switch>
+                <Route path='/' exact component={MainList}/>
+                <Route path='/cart' component={ItemCart}/>
+                <Route path='/modal' component={Modal}/>
+                <Route  exact component={MainList}/>
+      </Switch>  
     </div>
   );
 }

@@ -1,0 +1,48 @@
+
+
+.menu__item {
+  width:280px;
+  background: cornsilk;
+  list-style-type: none;
+  margin:20px 15px;
+  text-align: center;
+  border-radius:15px;  
+}
+
+.menu__img {
+width:280px;
+height:200px;
+box-shadow: 0 0 10px rgba(255, 255, 255, 0.685);
+}
+
+.menu__title {
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;;
+
+}
+.menu__category {
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;;
+
+}
+.menu__price {
+    text-align: center;
+    margin: 5px; 
+    font-weight: bold;;
+}
+.menu__btn {
+    margin:10px;
+    width:90px;
+    height: 40px;
+   border-radius:30px;
+   border: none;
+   background: rgb(49, 116, 75);
+   cursor: pointer;
+}
+
+/* .menu__category.menu__price {
+color:white;
+font-weight: bold;
+} */
