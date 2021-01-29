@@ -3,3 +3,4 @@
 [0125/232434.985:ERROR:exception_snapshot_win.cc(99)] thread ID 4464 not found in process
 [0125/234547.805:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [0126/015213.936:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0128/235850.692:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
