@@ -42,7 +42,8 @@
     width:100px;
 }
 .inp {
-    margin-left: 40px;
+    /* margin:0 auto; */
+    width:300px;
 }
 
 }

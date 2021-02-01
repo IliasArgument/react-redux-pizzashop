@@ -10,7 +10,8 @@ import Modal from './components/modal';
 function App() {
   
   return (
-    <div style={{background: `url(${img}) center center/cover no-repeat`}} 
+    <div className="App">
+<div 
     className="app">
       <Header/>
       <Switch>
@@ -20,6 +21,8 @@ function App() {
                 <Route  exact component={MainList}/>
       </Switch>  
     </div>
+    </div>
+    
   );
 }
 
