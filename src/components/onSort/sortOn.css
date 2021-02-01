@@ -47,3 +47,24 @@
 }
 
 }
+@media screen and (max-width:380px) {
+
+    .btn1 {
+        max-width:90px;
+        margin-left:10px;
+        font-size: 1rem;
+    }
+    .inp {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:360px) {
+
+    .btn1 {
+        max-width:80px;
+        font-size: 1rem;
+    }
+    .inp {
+        margin: 0 auto;
+    }
+}

@@ -5,15 +5,29 @@
     align-items: center;
     flex-wrap: wrap;
     margin-left:25px;
+    padding:30px;
 }
 
 
 
-@media screen and (max-width:700px) {
+@media screen and (width:660px) {
 
 
 .menu {
-    margin-left: 60px;
+    padding:20px;
+    margin-right: 20px;
+    
+}
+}
 
-}
-}
+
+@media screen and (max-width:360px) {
+
+
+    .menu {
+        
+        padding:5px;
+        margin-right: 10px;
+        
+    }
+    }

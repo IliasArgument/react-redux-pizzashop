@@ -26,3 +26,10 @@
     margin-right: 10px;
     
 }
+@media screen and (max-width:360px) {
+
+    .list{ 
+
+        margin-right:40px;
+    }
+}
