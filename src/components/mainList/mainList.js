@@ -5,19 +5,26 @@ import { connect } from "react-redux";
 import { menuLoaded, addToCart, onError,onSort,onSearch} from "../../actions/index";
 import Error from "../../error/error";
 import WithRestoService from "../../hoc";
+import SortOn from '../onSort';
+import U from '../../db.json';
+
 
 
 
 
 const MainList = ({ menu, addToCart, onError, menuLoaded, error, RestoService,onSort,onSearch,value}) => {
 
-
+  
+  
  
   useEffect(() => {
-    RestoService.getMenuItem()
-      .then((a) => menuLoaded(a))
-      .catch(() => onError());
+    menuLoaded(U.menu)
+    // RestoService.getMenuItem()
+    //   .then((art) => menuLoaded(art))
+    //   .catch(() => onError());
   }, [RestoService, menuLoaded, onError]);
+
+console.log(99)
 
 
 
@@ -25,20 +32,8 @@ const MainList = ({ menu, addToCart, onError, menuLoaded, error, RestoService,on
     return <Error />;
   } else {
     return (
-      <>
-      <div className="">
-         <div className="blc">
-       <div className="btn">
-            <button  className="btn1" onClick={() => onSort('title')}>Size</button>
-            <button  className="btn1" onClick={onSort.bind(this, 'price')}>Price</button>
-            <button className="btn1" onClick={onSort.bind(this, 'catecory')}>Category</button>
-       </div>
-       <div className="search">
-         <input className="inp" placeholder="...search" value={value} onChange={(e) => onSearch(e.target.value)}></input>         
-       </div>
-      </div>
-      </div>
-      
+      <>   
+      <SortOn/>
       <ul className="menu">
           {menu.map((item) => (
             <ItemLists

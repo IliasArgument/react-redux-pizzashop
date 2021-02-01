@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import "./itemCart.css";
 import { connect } from "react-redux";
 import { onDelete,onClear} from "../../actions/index";
@@ -6,8 +6,8 @@ import WithRestoService from "../../hoc";
 import { Link } from "react-router-dom";
 import uniqBy from "lodash/uniqBy";
 
-const ItemCart = ({ items, onDelete, RestoService,onClear}) => {
 
+const ItemCart = ({ items, onDelete, RestoService,onClear}) => {
 
 
   if (items.length === 0) {

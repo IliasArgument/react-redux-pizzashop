@@ -5,6 +5,7 @@ const initialState = {
     error: false,
     modal: true,
     value: '',
+    type: 'price'
 }
 
 const reducer = (state = initialState, action) => {
@@ -79,7 +80,18 @@ const reducer = (state = initialState, action) => {
 
                 return {
                     ...state,
-                    menu: arrSort.sort((a, b) => a[sorts] > b[sorts] ? 1 : -1)
+                    // eslint-disable-next-line array-callback-return
+                    menu: arrSort.sort((a, b) => {
+                        if(sorts === 'price') {
+                          return  a[sorts] > b[sorts] ? 1 : -1;
+                        }
+                        else if(sorts === 'category') {
+                            return a[sorts].localeCompare(b[sorts]);
+                        }
+                        else if(sorts === 'title'){
+                            return (a[sorts] - b[sorts]? 1 : -1);
+                        }
+                    })
                     
                 };
                 case 'ON_SEARCH':

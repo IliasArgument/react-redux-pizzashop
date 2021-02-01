@@ -16,7 +16,7 @@ ReactDOM.render(
                 <Router>
                     <App/>
                 </Router>
-            </RestoServiceContext.Provider>
+  </RestoServiceContext.Provider>
   </Provider>
   ,
   document.getElementById('root')
