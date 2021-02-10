@@ -1,2 +1,2 @@
-import ItemLists from './itemLists';
+import ItemLists from './ItemLists';
 export default ItemLists;

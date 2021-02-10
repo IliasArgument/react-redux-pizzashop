@@ -1,4 +1,4 @@
-import ItemCart from "./itemCart";
+import ItemCart from "./ItemCart";
 
 
 export default ItemCart;

@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./mainList.css";
-import ItemLists from "../itemLists/itemLists";
+import ItemLists from "../itemLists";
 import { connect } from "react-redux";
 import { menuLoaded, addToCart, onError,onSort,onSearch} from "../../actions/index";
 import Error from "../../error/error";
 import WithRestoService from "../../hoc";
-import SortOn from '../onSort';
+import SortOn from '../sorts';
 import U from '../../db.json';
 
 

@@ -12,6 +12,18 @@
     display:flex;
     margin:20px;
 }
+.style_head {
+    position: relative;
+    left: 105px;
+    top: 13px;
+    font-size: 9px;
+    width: 12px;
+    height: 12px;
+    background: red;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+}
 
 .item {
     opacity: 22;
@@ -20,6 +32,9 @@
     font-weight: bold;
     padding: 10px;
     text-decoration: none;    
+} 
+.item:hover{
+    opacity:0,5;
 }
 .header__cart{
     height:15px;
